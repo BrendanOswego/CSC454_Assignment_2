@@ -1,5 +1,4 @@
 @echo off
-mkdir -p output
 echo Cleaning output Directory
 rm -rf output/*
 echo Compiling Java
