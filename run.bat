@@ -1,6 +1,7 @@
 @echo off
+mkdir -p output
 echo Cleaning output Directory
-rm -rf output
+rm -rf output/*
 echo Compiling Java
 javac -d output src/main/*.java
 echo Running Main Java
