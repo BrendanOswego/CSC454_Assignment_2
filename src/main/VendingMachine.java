@@ -4,6 +4,7 @@ package main;
 class VendingMachine implements Model {
 
 	Store store;
+  
 
 	VendingMachine (Store store) {
 		this.store = store;
