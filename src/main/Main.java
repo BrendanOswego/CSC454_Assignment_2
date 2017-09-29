@@ -8,13 +8,15 @@ class Main {
 	}
 
 	private static void start() {
-		System.out.println("Enter command any combination of q n d cancel wait change");
+		System.out.println("Enter command any combination of q n d cancel wait");
 		Scanner sc = new Scanner(System.in);
-		VendingMachine vm = new VendingMachine();
+		//q, d, n, machineAmount, coffees, changePressed
+		Store initialState = new Store (5, 2, 3, 0, 0, false);
+		VendingMachine vm = new VendingMachine(initialState);
 		String userInput = sc.nextLine();
 		while (!userInput.equals("quit")) {
 			String[] input = userInput.split(" ");
-			vm.applyStateChange(input);
+			vm.parseInput(input);
 			userInput = sc.nextLine();
 		}
 	}

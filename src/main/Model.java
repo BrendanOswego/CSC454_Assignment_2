@@ -1,5 +1,6 @@
 package main;
 
 interface Model {
-	void applyStateChange(String[] change);
+	void applyStateChange(Store newStore);
+	Store getState();
 }
