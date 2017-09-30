@@ -14,7 +14,7 @@
 ----------
 
 
-> **To run project on Linux/iOS machine:**
+> **To run project on Linux/macOS machine:**
 > 
 >  1. Clone or download zip of repository.
 >  2. Got to root directory of project from any command line and type command `chmod u+x ./run.sh`
