@@ -7,79 +7,68 @@ class Store {
   private int machineAmount;
   private int coffees;
   private boolean changePressed;
-  
-  Store() {
-    quarters = 0;
-    dimes = 0;
-    nickels = 0;
-    machineAmount = 0;
-    coffees = 0;
-    changePressed = false;
-  }
 
-  Store (int quarters, int dimes, int nickels,
-          int machineAmount, int coffees, boolean changePressed) {
+  Store(int quarters, int dimes, int nickels) {
     this.quarters = quarters;
     this.dimes = dimes;
     this.nickels = nickels;
-    this.machineAmount = machineAmount;
-    this.coffees = coffees;
-    this.changePressed = changePressed;
+    this.machineAmount = 0;
+    this.coffees = 0;
+    this.changePressed = false;
   }
-  
-  void setQuarters (int quarters) {
+
+  void setQ(int quarters) {
     this.quarters = quarters;
   }
 
-  void setDimes (int dimes) {
+  void setD(int dimes) {
     this.dimes = dimes;
   }
 
-  void setNickels (int nickels) {
+  void setN(int nickels) {
     this.nickels = nickels;
   }
 
-  void setChangePressed (boolean changePressed) {
+  void setChangePressed(boolean changePressed) {
     this.changePressed = changePressed;
   }
 
-  void setMachineAmount (int machineAmount) {
+  void setMachineAmount(int machineAmount) {
     this.machineAmount = machineAmount;
   }
 
-  void setCoffees (int coffees) {
+  void setCoffees(int coffees) {
     this.coffees = coffees;
   }
 
-  int getQuarters () {
+  int getQ() {
     return quarters;
   }
-  
-  int getDimes () {
+
+  int getD() {
     return dimes;
   }
 
-  int getNickels () {
+  int getN() {
     return nickels;
   }
 
-  boolean getChangePressed () {
+  boolean changePressed() {
     return changePressed;
   }
 
-  int getMachineAmount () {
+  int getMachineAmount() {
     return machineAmount;
   }
 
-  int getCoffees () {
+  int getCoffees() {
     return coffees;
   }
 
   @Override
-  public String toString () {
-    return "Quarters: " + quarters + '\n' + "Dimes: " + dimes + '\n' + 
-      "Nickels: " + nickels + '\n' + "Coffees: " + coffees + '\n' +
-      "Current Amount: " + machineAmount + '\n' + "Change Pressed: " + changePressed;
+  public String toString() {
+    return "Quarters: " + quarters + '\n' + "Dimes: " + dimes + '\n' + "Nickels: " + nickels + '\n' + "Coffees: "
+        + coffees + '\n' + "Current Amount: " + machineAmount + '\n' + "Change Pressed: " + changePressed;
   }
 
 }
